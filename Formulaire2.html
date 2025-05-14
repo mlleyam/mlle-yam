@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="formulaire2.css" type="text/css" />
+</head>
+
+<body>
+    <form method="post" action="traitement.php">
+
+        <fieldset>
+            <legend>État civil</legend>
+            <div class="form-container">
+                <div class="form-left">
+                    <p>
+                        <label for="matricule">Matricule</label>
+                        <input type="text" id="matricule" name="matricule" />
+                    </p>
+                    <p>
+                        <label for="Nom">Nom</label>
+                        <input type="text" id="Nom" name="Nom" />
+                    </p>
+                    <p>
+                        <label for="Prenom">Prénom</label>
+                        <input type="text" id="Prenom" name="Prénom" />
+                    </p>
+                </div>
+                <div class="form-right">
+                    <p>
+                        <label for="Sexe">Sexe</label>
+                        <input type="text" id="Sexe" name="Sexe" />
+                    </p>
+                    <p>
+                        <label for="DateNaissance">Date de naissance</label>
+                        <input type="text" id="DateNaissance" name="DateNaissance" />
+                    </p>
+                    <p>
+                        <label for="Age">Âge</label>
+                        <input type="text" id="Age" name="Age" />
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mes diplômes</legend>
+            <p>Cochez les diplômes que vous avez :</p>
+            <p>
+                <input type="checkbox" name="CEP" id="CEP" />
+                <label for="CEP">CEP</label><br />
+                <input type="checkbox" name="BEPC" id="BEPC" />
+                <label for="BEPC">BEPC</label><br />
+                <input type="checkbox" name="BAC" id="BAC" />
+                <label for="BAC">BAC</label>
+            </p>
+        </fieldset>
+
+        <fieldset style>
+            <legend>Expertises</legend>
+            <p>
+                <input type="checkbox" name="ExpertiseIT" id="ExpertiseIT" />
+                <label for="ExpertiseIT">Expertise en IT</label><br />
+                <input type="checkbox" name="ExpertiseBavardage" id="ExpertiseBavardage" />
+                <label for="ExpertiseBavardage">Expertise en bavardage</label>
+            </p>
+        </fieldset>
+
+        <fieldset style="border-color: aquamarine;">
+            <legend><strong> BOUTONS </strong></legend>
+            <p>Choisir une option :</p>
+            <p>
+                <input type="submit" value="Envoyer" />
+                <input type="reset" value="Effacer" />
+                <button type="button" onclick="history.back()">Retour</button>
+            </p>
+        </fieldset>
+
+    </form>
+    <p><a href="formulaire1.html">  La page precedente...</a></p>
+<p><a href="tableau1.HTML">La page suivante ...</a></p>
+</body>
+
+</html>
